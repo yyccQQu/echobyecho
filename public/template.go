@@ -13,14 +13,36 @@ type Template struct {
 	templates *template.Template
 }
 
+
 // 实现 echo.Renderer 接口
 func (t *Template) Render(w io.Writer, name string, data interface{}, c echo.Context) error {
 	return t.templates.ExecuteTemplate(w, name, data)
 }
 
 func Hello(c echo.Context) error {
-	return c.Render(http.StatusOK, "hello", "Will") //只能渲染数据，不能嵌套模板
+	return c.Render(http.StatusOK, "hello",  map[string]interface{}{
+		"name": "Dolly!",
+		"pwd": "123456",
+	})
 }
+
+// http://go-echo.org/guide/templates/
+type TemplateRenderer struct {
+	templates *template.Template
+}
+
+// Render renders a template document
+func (t *TemplateRenderer) Render(w io.Writer, name string, data interface{}, c echo.Context) error {
+
+	// Add global methods if data is a map
+	if viewContext, isMap := data.(map[string]interface{}); isMap {
+		viewContext["reverse"] = c.Echo().Reverse
+	}
+
+	return t.templates.ExecuteTemplate(w, name, data)
+}
+
+
 
 func main() {
 	t := &Template{
