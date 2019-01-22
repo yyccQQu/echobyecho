@@ -25,6 +25,14 @@ func Hello(c echo.Context) error {
 		"pwd": "123456",
 	})
 }
+func Templatehtml(c echo.Context) error {
+	//模板嵌套时相同key 会被覆盖 ---> 其他模板如果 没有该模板变量则不会被渲染
+	return c.Render(http.StatusOK, "template",  map[string]interface{}{
+		"names": "Dolly!",
+		"pwd": "123456",
+	})
+}
+
 
 // http://go-echo.org/guide/templates/
 type TemplateRenderer struct {
@@ -62,5 +70,6 @@ func main() {
 	})
 
 	e.GET("/hello", Hello)
+	e.GET("/template", Templatehtml)
 	e.Logger.Fatal(e.Start(":1323"))
 }
