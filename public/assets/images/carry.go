@@ -1,4 +1,4 @@
-package main
+package images
 
 import (
 	"bytes"
@@ -44,7 +44,7 @@ func init() {
 
 func main() {
 
-	Open(fmt.Sprintf("http://localhost:%d/member/index.tpl", *port))
+	Open(fmt.Sprintf("http://localhost:%d/member/index.html", *port))
 
 	e := echo.New()
 	e.Static("/static", "./static")
@@ -65,7 +65,7 @@ func main() {
 
 		d, err := filepath.Abs(*dir)
 		uri := mp["position"]
-		b, err = ioutil.ReadFile(filepath.Join(d, "member", uri+".tpl"))
+		b, err = ioutil.ReadFile(filepath.Join(d, "member", uri+".html"))
 
 		fmt.Println(mp)
 		if err != nil {

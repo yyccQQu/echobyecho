@@ -6,7 +6,8 @@ import (
 	"net/http"
 
 	"github.com/labstack/echo"
-)
+
+			)
 
 type Template struct {
 	templates *template.Template
@@ -18,7 +19,7 @@ func (t *Template) Render(w io.Writer, name string, data interface{}, c echo.Con
 }
 
 func Hello(c echo.Context) error {
-	return c.Render(http.StatusOK, "hello", "Will")
+	return c.Render(http.StatusOK, "hello", "Will") //只能渲染数据，不能嵌套模板
 }
 
 func main() {
@@ -27,12 +28,17 @@ func main() {
 	}
 
 	e := echo.New()
-	// 访问URI：/js/main.js 会寻找文件 assets/js/main.js
-	e.Static("/", "assets")
 
-	e.File("/", "public/index.html")
+	// http://localhost:1323/static/index.html
+
+	e.Static("/static","/Users/xieyadong/gopath1/src/echobyecho/public")
 
 	e.Renderer = t
+
+	e.GET("/", func(c echo.Context) error {
+		return c.String(http.StatusOK, "Hello, World!")
+	})
+
 	e.GET("/hello", Hello)
 	e.Logger.Fatal(e.Start(":1323"))
 }
