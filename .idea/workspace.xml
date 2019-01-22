@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c05acfe-f492-4cbb-b624-c75b5f16b9be" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/context/contextuseag.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/template.go" beforeDir="false" afterPath="$PROJECT_DIR$/public/template.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/views/hello.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/hello.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/views/something.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/views/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/template.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +53,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="3" />
-          <entry key="go" value="41" />
+          <entry key="go" value="42" />
           <entry key="html" value="11" />
           <entry key="ico" value="1" />
           <entry key="js" value="4" />
@@ -66,7 +63,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="41" />
+          <entry key="Go" value="42" />
           <entry key="HTML" value="11" />
           <entry key="Image" value="2" />
           <entry key="JavaScript" value="4" />
@@ -76,7 +73,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="25" />
-          <entry key="go" value="1017" />
+          <entry key="go" value="1082" />
           <entry key="html" value="292" />
           <entry key="js" value="18" />
           <entry key="tpl" value="15" />
@@ -84,7 +81,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="1017" />
+          <entry key="Go" value="1082" />
           <entry key="HTML" value="292" />
           <entry key="JavaScript" value="18" />
           <entry key="PLAIN_TEXT" value="40" />
@@ -111,17 +108,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/views/template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="135">
+              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/context/contextuseag.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="33" column="33" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/template.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="28" column="90" selection-start-line="28" selection-start-column="90" selection-end-line="28" selection-end-column="90" />
+            <state relative-caret-position="334">
+              <caret line="73" column="36" lean-forward="true" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="36" />
               <folding>
                 <element signature="e#14#92#0" expanded="true" />
               </folding>
@@ -134,8 +140,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Go File" />
         <option value="HTML File" />
+        <option value="Go File" />
       </list>
     </option>
   </component>
@@ -198,6 +204,8 @@
         <option value="$PROJECT_DIR$/public/views/hello.html" />
         <option value="$PROJECT_DIR$/public/views/template.html" />
         <option value="$PROJECT_DIR$/public/template.go" />
+        <option value="$PROJECT_DIR$/public/context/main.go" />
+        <option value="$PROJECT_DIR$/public/context/contextuseag.go" />
       </list>
     </option>
   </component>
@@ -207,7 +215,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="827" />
@@ -234,13 +242,7 @@
               <item name="echobyecho" type="b2602c69:ProjectViewProjectNode" />
               <item name="echobyecho" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="echobyecho" type="b2602c69:ProjectViewProjectNode" />
-              <item name="echobyecho" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="context" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="echobyecho" type="b2602c69:ProjectViewProjectNode" />
@@ -289,13 +291,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build template.go">
-    <configuration name="go build json.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build contextuseag.go">
+    <configuration name="go build contextuseag.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="echobyecho" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/json.go" />
+      <filePath value="$PROJECT_DIR$/public/context/contextuseag.go" />
       <package value="echobyecho" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -341,19 +343,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build json.go" />
       <item itemvalue="Go Build.go build rest.go" />
       <item itemvalue="Go Build.go build serverCRUD.go" />
       <item itemvalue="Go Build.go build template.go" />
       <item itemvalue="Go Build.go build reflect.go" />
+      <item itemvalue="Go Build.go build contextuseag.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build contextuseag.go" />
         <item itemvalue="Go Build.go build template.go" />
         <item itemvalue="Go Build.go build reflect.go" />
         <item itemvalue="Go Build.go build rest.go" />
         <item itemvalue="Go Build.go build serverCRUD.go" />
-        <item itemvalue="Go Build.go build json.go" />
       </list>
     </recent_temporary>
   </component>
@@ -367,7 +369,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="827" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
@@ -375,7 +377,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32771084" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.34457833" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.31428573" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -512,6 +514,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <element signature="e#14#65#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -519,6 +524,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
           <caret line="55" column="35" lean-forward="true" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
+          <folding>
+            <element signature="e#14#65#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -538,13 +546,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/something.html" />
-    <entry file="file://$PROJECT_DIR$/public/views/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/views/hello.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -552,13 +553,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/template.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="28" column="90" selection-start-line="28" selection-start-column="90" selection-end-line="28" selection-end-column="90" />
+        <state relative-caret-position="334">
+          <caret line="73" column="36" lean-forward="true" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="36" />
           <folding>
             <element signature="e#14#92#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/context/contextuseag.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="33" />
         </state>
       </provider>
     </entry>
